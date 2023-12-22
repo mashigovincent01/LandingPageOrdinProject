@@ -1,0 +1,20 @@
+.nav-link{
+    list-style: none;
+}
+
+ul, .header, .products, .signup{
+    display: flex;
+}
+
+.product-img{
+    width: 200px;
+}
+
+ img{
+    width: 100%;
+    
+}
+
+.header-img{
+    width: 200px;
+}
