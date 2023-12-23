@@ -8,7 +8,8 @@
     list-style: none;
 }
 nav, .hero{
-    background-color: #1F2937;
+    /* background-color: #1F2937; */
+    background-color: #9A3B3B;
     color: white;
     
 }
@@ -40,31 +41,37 @@ ul{
 .header-logo{
     margin-right: auto;
 }
+.hero-details{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.hero button{
+    margin-top: 10px;
+}
 
 .hero{
     gap: 20px;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.hero-details, .hero-img{
-    flex-basis: 40%;
+.hero-details{
+    flex-basis: 50%;
 }
-
+.hero-img{
+    flex-basis: 400px;
+}
+.hero-img img{ 
+    border-radius: 5px;
+}
 
 body{
     min-width: 400px;
 }
 
-@media screen and (max-width: 992px) {
-    ul{
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .hero{
-        flex-direction: column;
-    }
-}
+
 
 .hero h1{
     font-size: 48px;
@@ -75,23 +82,110 @@ body{
 }
 button{
     color: white;
-    background-color: #3882F6;
+    background-color: #9A3B3B;
     padding: 5px 20px;
     border-radius: 10px;
-    border-color: #3882F6;
+    border-color: #9A3B3B;
 }
 
 .products{
-    gap: 10px;
-    justify-content: center;
+    
+    /* justify-content: center; */
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    /* background-color: blue; */
+    width: 80%;
+    margin: auto;
+    gap: 20px;
 }
 
 .product img{
-    border: solid #3882F6;
+    border: solid #C08261;
     border-radius: 10px;
+
 }
 .product{
-    flex-basis: 100px;
+    flex-basis: 200px;
+    
+    justify-content: space-between;
+}
+.product img{
+    height: 300px;
+}
+
+.products-section h2{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.quote{
+    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.quote-author{
+    align-self: flex-end;
+    padding-bottom: 40px;
+    font-weight: bold;
+
+}
+
+.quote-message{
+    /* font-style: italic; */
+    padding: 40px;
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote-section{
+    background-color: #E5E7EB;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: white;
+}
+.header-logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.signup{
+    background-color: #C08261;
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.signup-details{
+    flex-basis: 70%;
+    margin-right: auto;
+    color: white;
+}
+footer{
+    background-color: #9A3B3B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.product-p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
