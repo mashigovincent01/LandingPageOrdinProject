@@ -1,9 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
 .nav-link{
     list-style: none;
 }
-
-ul, .header, .products, .signup{
+nav, .hero{
+    background-color: #1F2937;
+    color: white;
+    
+}
+ul, .hero, .products, .signup{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .product-img{
@@ -14,7 +25,73 @@ ul, .header, .products, .signup{
     width: 100%;
     
 }
+ul{
+    justify-content: flex-start;
+    padding: 20px;;
+    gap: 2rem;
+    padding-bottom: 28px;
+}
+.hero-img img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
 
-.header-img{
-    width: 200px;
+.header-logo{
+    margin-right: auto;
+}
+
+.hero{
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-details, .hero-img{
+    flex-basis: 40%;
+}
+
+
+body{
+    min-width: 400px;
+}
+
+@media screen and (max-width: 992px) {
+    ul{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hero{
+        flex-direction: column;
+    }
+}
+
+.hero h1{
+    font-size: 48px;
+}
+
+.hero p{
+    font-size: 24px;
+}
+button{
+    color: white;
+    background-color: #3882F6;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border-color: #3882F6;
+}
+
+.products{
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product img{
+    border: solid #3882F6;
+    border-radius: 10px;
+}
+.product{
+    flex-basis: 100px;
 }
